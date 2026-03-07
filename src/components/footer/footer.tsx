@@ -7,8 +7,10 @@ const Footer: React.FC = () => {
       <div className="container mx-auto text-center">
         <p className="text-sm">&copy; 2024 SaaS Landing. All rights reserved.</p>
         <div className="mt-4">
-          <a href="#" className="mx-2 hover:underline">y</a>
-          <a href="#" className="mx-2 hover:underline">Terms of Service</a>
+          <a href="#" className="mx-2 hover:underline">home</a>
+          <a href="#" className="mx-2 hover:underline">about</a>
+          <a href="#" className="mx-2 hover:underline">courses</a>
+          <a href="#" className="mx-2 hover:underline">Blog</a>
           <a href="#" className="mx-2 hover:underline">Contact Us</a>
         </div>
       </div>

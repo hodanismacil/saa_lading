@@ -2,9 +2,6 @@ import React from 'react';
 import sawir from '../../assets/sawir.png';
 
 import {} from 'react-icons/si';
-import { AiFillPlayCircle, AiFillStar } from 'react-icons/ai';
-import course from '../courses/course';
-
 
  
 
@@ -76,7 +73,7 @@ const Home: React.FC = () => {
           </div>
           <div className="flex gap-10 text-2xl text-gray-400">
  
-</div>
+</div >
           <span className="text-2xl font-bold transition-all duration-300 hover:text-purple-400">HubSpot</span>
           <span className="text-2xl font-bold italic transition-all duration-300 hover:text-purple-400">loom</span> 
           <span className="text-2xl font-bold transition-all duration-300 hover:text-purple-400" > GitLab</span>
@@ -91,7 +88,7 @@ const Home: React.FC = () => {
 
     </section>
 
-   <section className=" py-6 px-7 ">
+   <section className=" py-6 px-7 rid ">
       <div className="max-w-7xl mx-auto px-8 flex  items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <h2 className="text-4xl font-serif font-bold text-center mb-12">
           pobular

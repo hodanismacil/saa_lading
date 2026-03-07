@@ -12,7 +12,7 @@ const About = () => {
            </section>
           {/* {our story} */}
            <section className="max-w7xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-16 items-center">
-            <div className="text-center">
+            <div className="text-center ">
                 <h2 className="text-2xl font-bold mb-4">Our <span className="text-purple-700">Story</span></h2>
                 <p className="text-gray-300 leading-relaxed md:text-lg items-center">
                     Our platform was created to make learning simple, flexible, and
@@ -25,16 +25,16 @@ const About = () => {
              </p>
 
             </div>
-            <div className="flex items-center justify-center">
-                <img src="/path/to/image.jpg" alt="Our Story" className="rounded-lg shadow-lg" />
+            <div className="flex items-center justify-center ">
+                <img src="https://images.pexels.com/photos/5717411/pexels-photo-5717411.jpeg" alt="Our Story" className="rounded-lg shadow-lg" />
             </div>
             <div>
-                 <div className="bg-purple-900/30 rounded-3xl h-350px flex items-center justify-center text-6xl">
+                 <div className="bg-purple-800/45 rounded-3xl h-350px flex items-center justify-center text-6xl">
           🎓
         </div>
             </div>
            </section>
-            <section className="py-20 bg-[#291969]">
+            <section className="py-20 bg-purple-800/50">
         <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-10 text-center px-6">
           <div>
             <h3 className="text-4xl font-bold text-purple-400">10K+</h3>
@@ -64,28 +64,73 @@ const About = () => {
 
         <div className="grid md:grid-cols-3 gap-10">
 
-          <div className="bg-[#2D215E] p-8 rounded-2xl hover:-translate-y-4 transition duration-300">
+          <div className="bg-purple-800 p-8 rounded-2xl hover:-translate-y-4 transition duration-300">
             <h3 className="text-xl font-semibold mb-4">Expert Instructors</h3>
             <p className="text-gray-300">
               Learn from industry professionals with real-world experience.
             </p>
           </div>
 
-          <div className="bg-[#2D215E] p-8 rounded-2xl hover:-translate-y-4 transition duration-300">
+          <div className="bg-purple-800 p-8 rounded-2xl hover:-translate-y-4 transition duration-300">
             <h3 className="text-xl font-semibold mb-4">Flexible Learning</h3>
             <p className="text-gray-300">
               Study anytime, anywhere at your own pace.
             </p>
           </div>
 
-          <div className="bg-[#2D215E] p-8 rounded-2xl hover:-translate-y-4 transition duration-300">
+          <div className="bg-purple-800 p-8 rounded-2xl hover:-translate-y-4 transition duration-300">
             <h3 className="text-xl font-semibold mb-4">Affordable Courses</h3>
             <p className="text-gray-300">
               High-quality education at an affordable price.
             </p>
           </div>
 
+     
         </div>
+        <section className="py-20 bg-purple-800 text-center hover:translate-y-5 transition duration-300 mt-9 ">
+      
+        <h3 className="text-4xl font-bold md 16  ">
+          meet our <span className="text-purple-400 ">team</span> 
+        </h3>
+         
+            
+         
+      <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto px-6">
+
+    <div className="bg-[#2D215E] p-8 rounded-2xl">
+      <img
+        src="https://randomuser.me/api/portraits/men/32.jpg"
+        className="w-24 h-24 rounded-full mx-auto mb-4"
+      />
+      <h3 className="font-semibold">John Doe</h3>
+      <p className="text-gray-400 text-sm">Instructor</p>
+    </div>
+
+    <div className="bg-[#2D215E] p-8 rounded-2xl">
+      <img
+        src="https://randomuser.me/api/portraits/women/44.jpg"
+        className="w-24 h-24 rounded-full mx-auto mb-4"
+      />
+      <h3 className="font-semibold">Sarah Smith</h3>
+      <p className="text-gray-400 text-sm">Course Designer</p>
+    </div>
+
+    <div className="bg-[#2D215E] p-8 rounded-2xl">
+      <img
+        src="https://randomuser.me/api/portraits/men/55.jpg"
+        className="w-24 h-24 rounded-full mx-auto mb-4"
+      />
+      <h3 className="font-semibold">David Lee</h3>
+      <p className="text-gray-400 text-sm">Developer</p>
+    </div>
+
+  </div>
+         
+
+         
+       </section>
+       
+        
       </section>
 
 

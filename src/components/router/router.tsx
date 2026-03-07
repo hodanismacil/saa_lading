@@ -3,6 +3,7 @@ import Navbar from "../navebar/navbar";
 import Home from "../homepages/home";
 import About from "../about/about";
 import Course from "../courses/course";
+import Footer from "../footer/footer";
 
 
 const Router:React.FC=()=>{
@@ -10,6 +11,7 @@ const Router:React.FC=()=>{
         <div>
            <div> <Navbar/></div>
             <Outlet/>
+            <Footer/>
         </div>
     )
       
@@ -25,7 +27,7 @@ export const router=createBrowserRouter([
         element:<Router/>,
         children:[
             {
-                path:'home',
+                path:'/home',
                 element:<Home/>
             },
             {
