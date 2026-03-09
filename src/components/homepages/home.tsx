@@ -11,11 +11,11 @@ const Home: React.FC = () => {
     <div>
       <section className=" px-8 py-16 flex flex-col justify-center relative overflow-hidden">
       
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2  gap-12 items-center">
         
         {/* Qaybta Bidix */}
-        <div className="z-10">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold leading-tight mb-6">
+        <div className="z-10 ">
+          <h1 className="text-5xl md:text-4xl font-serif font-bold leading-tight mb-6">
             Best courses <span className="text-purple-300 font-sans">are waiting</span> to enrich your skill <span className="text-red-400">+++</span>
           </h1>
           <p className="text-gray-300 text-lg mb-10 max-w-md">

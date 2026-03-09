@@ -4,6 +4,10 @@ import Home from "../homepages/home";
 import About from "../about/about";
 import Course from "../courses/course";
 import Footer from "../footer/footer";
+import Blog from "../Blog/blog";
+import Login from "../Login/login";
+import Contact from "../contactpage/contact";
+import GETstarted from "../get-started/get-started";
 
 
 const Router:React.FC=()=>{
@@ -27,7 +31,7 @@ export const router=createBrowserRouter([
         element:<Router/>,
         children:[
             {
-                path:'/home',
+                index:true,
                 element:<Home/>
             },
             {
@@ -36,7 +40,23 @@ export const router=createBrowserRouter([
             },
          {
             path:'course',
-            element:<Course/>
+           element:<Course/>
+         },
+         {
+            path:'blog',
+            element:<Blog/>
+         },
+         {
+            path:'/login',
+            element:<Login/>
+         },
+         {
+          path:'/getstartedq21W`',
+          element:< GETstarted/>
+         },
+         {
+            path:'/contact',
+            element:<Contact/>
          }
         ]
     }
