@@ -1,128 +1,118 @@
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-
- import {  useNavigate } from "react-router-dom";
-import { Button } from "../../components/ui/button"
-import{
-  Card,
-  CardAction,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../../components/ui/card"
-import { Input } from "../../components/ui/input"
-import { Label } from "../../components/ui/label"
-import { useState } from "react";
-
+import { Button } from "../ui/button";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter, CardAction } from "../ui/card";
+import { Input } from "../ui/input";
+import { Label } from "../ui/label";
 
 const Login: React.FC = () => {
 
-  const navigate=useNavigate()
-const [email,setEmail] = useState("")
-const [password,setPassword] = useState("")
+  const navigate = useNavigate()
 
-const handleLogin = (e) => {
-  e.preventDefault();
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
 
-  const savedEmail = localStorage.getItem("email");
-  const savedPassword = localStorage.getItem("password");
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault()
 
-  if (email === savedEmail && password === savedPassword) {
-    alert("Login Success");
+    const savedEmail = localStorage.getItem("email")
+    const savedPassword = localStorage.getItem("password")
 
-    navigate("/"); 
-  } else {
-    alert("Invalid Email or Password");
+    if (email === savedEmail && password === savedPassword) {
+      alert("Login Success")
+      navigate("/")
+    } else {
+      alert("Invalid Email or Password")
+    }
   }
-};
 
-return(
+  return (
 
-<div className="flex justify-center items-center min-h-screen">
+    <div className="flex justify-center items-center min-h-screen">
 
-<Card className="w-full max-w-sm">
+      <Card className="w-full max-w-sm">
 
-<CardHeader>
-<CardTitle>Login to your account</CardTitle>
-<CardDescription>
-Enter your email below to login to your account
-</CardDescription>
-<CardAction>
-<Button variant="link">Sign Up</Button>
-</CardAction>
-</CardHeader>
+        <CardHeader>
+          <CardTitle>Login to your account</CardTitle>
+          <CardDescription>
+            Enter your email below to login to your account
+          </CardDescription>
 
-<CardContent>
+          <CardAction>
+            <Button variant="link">Sign Up</Button>
+          </CardAction>
 
+        </CardHeader>
 
+        <CardContent>
 
-<form onSubmit={handleLogin}>
+          <form onSubmit={handleLogin}>
 
-<div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6">
 
-<div className="grid gap-2">
-<Label htmlFor="email">Email</Label>
+              <div className="grid gap-2">
+                <Label htmlFor="email">Email</Label>
 
-<Input
-id="email"
-type="email"
-placeholder="m@example.com"
-value={email}
-onChange={(e)=>setEmail(e.target.value)}
-required
-/>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="m@example.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
 
-</div>
+              </div>
 
-<div className="grid gap-2">
+              <div className="grid gap-2">
 
-<div className="flex items-center">
-<Label htmlFor="password">Password</Label>
+                <div className="flex items-center">
 
-<a
-href="#"
-className="ml-auto text-sm hover:underline"
->
-Forgot your password?
-</a>
+                  <Label htmlFor="password">Password</Label>
 
-</div>
+                  <a
+                    href="#"
+                    className="ml-auto text-sm hover:underline"
+                  >
+                    Forgot your password?
+                  </a>
 
-<Input
-id="password"
-type="password"
-value={password}
-onChange={(e)=>setPassword(e.target.value)}
-required
-/>
+                </div>
 
-</div>
+                <Input
+                  id="password"
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
 
-<Button type="submit" className="w-full">
-Login
-</Button>
+              </div>
 
-</div>
+              <Button type="submit" className="w-full">
+                Login
+              </Button>
 
-</form>
+            </div>
 
-</CardContent>
+          </form>
 
-<CardFooter className="flex-col gap-2">
+        </CardContent>
 
-<Button variant="outline" className="w-full">
-Login with Google
-</Button>
+        <CardFooter className="flex-col gap-2">
 
-</CardFooter>
+          <Button variant="outline" className="w-full">
+            Login with Google
+          </Button>
 
-</Card>
+        </CardFooter>
 
-</div>
+      </Card>
 
-)
+    </div>
 
+  )
 }
 
 export default Login

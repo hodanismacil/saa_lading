@@ -40,7 +40,6 @@ const Home: React.FC = () => {
           </div>
         </div>
 
-        {/* {Qaybta Midig */} 
          <div className="relative flex justify-center">
                <div className="  absolute top-10 left-20 text-yellow-400 text-3xl animate-pulse">⭐ </div>
  

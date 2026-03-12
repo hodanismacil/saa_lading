@@ -1,5 +1,5 @@
 import { createBrowserRouter ,Outlet } from "react-router-dom";
-import Navbar from "../navebar/navbar";
+import Navbar from "../navbar/navbar";
 import Home from "../homepages/home";
 import About from "../about/about";
 import Course from "../courses/course";
