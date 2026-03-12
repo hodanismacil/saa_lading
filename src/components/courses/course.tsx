@@ -1,4 +1,4 @@
-import { InputGroup, InputGroupAddon, InputGroupInput } from "../../components/ui/input-group";
+import { InputGroup, InputGroupAddon, InputGroupInput } from "../ui/input-group";
 import { BookOpen, Clock, Search } from "lucide-react"
 interface Props {
   image: string;
@@ -55,7 +55,7 @@ const courses = [
   },
 ];
 
-const Course: React.FC<Props> = ({ image, instructor, title, price, oldPrice }) => {
+const Course: React.FC<Props> = ({  instructor, title, price, oldPrice }) => {
   return (
     <div className="hover:scale-105 duration-300">
     <section className="py-20 mt-20">
