@@ -2,14 +2,15 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import Navbar from "../navbar/navbar";
 import Home from "../homepages/home";
 import About from "../about/about";
-import Course from "../courses/course";
+
 import Footer from "../footer/footer";
 import Blog from "../Blog/blog";
 import Login from "../Login/login";
 import Contact from "../contactpage/contact";
 import GETstarted from "../get-started/get-started";
+import Course from "../courses/course";
 
-const Router: React.FC = () => {
+const Router = () => {
   return (
     <div>
       <Navbar />
