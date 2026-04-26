@@ -40,6 +40,15 @@ const courses = [
     title: "html complete guide",
     price: "$110",
   },
+  {
+    id: 5,
+    image: "https://images.pexels.com/photos/1181216/pexels-photo-1181216.jpeg",
+    instructor: "Michael Chen",
+    title: "html complete guide",
+    price: "$110",
+  }
+
+  
 ];
 
 const Course = () => {
@@ -134,6 +143,68 @@ const Course = () => {
         ))}
 
       </section>
+
+       
+<section  className="max-w-5xl mx-auto px-6 py-20" >
+
+   <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 mt-16">
+
+  {/* Card 1 */}
+  <div className="bg-purple-800  p-6 rounded-2xl shadow hover:shadow-xl transition">
+    <p className="text-white leading-8">
+      This course is designed to help students build a strong foundation in their chosen field. Whether you are a beginner or someone looking to improve your existing skills, this course provides step-by-step guidance to help you succeed.
+    </p>
+  </div>
+
+  {/* Card 2 */}
+  <div className="bg-purple-800  p-6 rounded-2xl shadow hover:shadow-xl transition">
+    <p className="text-white leading-8">
+      Throughout the course, you will explore important topics in depth, supported by examples and hands-on exercises. The goal is not only to teach theory but also to ensure that you can apply what you learn in real-life situations.
+    </p>
+  </div>
+
+  {/* Card 3 */}
+  <div className="bg-purple-800 p-6 rounded-2xl shadow hover:shadow-xl transition">
+    <p className="text-white leading-8">
+      By the end of the course, you will feel confident in your abilities and ready to take on new challenges. This course prepares you for real-world projects and career opportunities.
+    </p>
+    
+  </div>
+
+
+    </div>
+
+    <div className="max-w-3xl mx-auto py-16 px-6 text-center">
+  <div className="mt-12">
+  <h2 className="text-2xl font-bold mb-4">Course Content</h2>
+
+  <ul className="space-y-3 flex   items-start gap-7">
+    <li className="bg-purple-300 text-black p-4 rounded-lg shadow">Introduction to Course</li>
+    <li className="bg-purple-300 text-black p-4 rounded-lg shadow">HTML Basics</li>
+    <li className="bg-purple-300 text-black p-4 rounded-lg shadow">CSS Fundamentals</li>
+    <li className="bg-purple-300 text-black p-4 rounded-lg shadow">JavaScript Basics</li>
+  </ul>
+  <div className="flex gap-6 mt-6 bg-purple-400 p-4 rounded-lg shadow justify-center">
+  <span>⭐ 4.9 Rating</span>
+  <span>👨‍🎓 1200 Students</span>
+  <span>⏱️ 10 Hours</span>
+</div>
+<div className="mt-20 bg-purple-300 rounded-lg p-6 shadow">
+  <h2 className="text-xl font-bold mb-3">What You Will Learn</h2>
+  <ul className="list-disc ml-6 text-gray-600">
+    <li>Build responsive websites</li>
+    <li>Understand JavaScript fundamentals</li>
+    <li>Create real-world projects</li>
+  </ul>
+</div>
+</div>
+
+   </div>
+
+
+
+    </section>
+      
     </div>
   );
 };
